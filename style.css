@@ -1,11 +1,14 @@
-body {
-  background-color: #eee;
+/* layout */
+* {
+  box-sizing: border-box;
 }
 header {
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
 }
 
 #img_1 {
@@ -21,6 +24,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-left: 450px;
 }
 
 .img_wrap {
@@ -45,7 +49,7 @@ nav {
   flex-direction: row;
 }
 section {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 input[type="email"] {
   margin-bottom: 16px;
@@ -53,13 +57,10 @@ input[type="email"] {
   height: 29px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   width: 200px;
   height: 29px;
-  background-color: chocolate;
-  font-size: 25px;
-  color: black;
-  font-weight: 600;
 }
 
 .left {
@@ -76,5 +77,115 @@ input[type="submit"] {
 
 .text-boxed {
   justify-content: center;
+}
 
+.img_of_vert {
+  margin-right: 60px;
+}
+.img_icon {
+  height: 50px;
+  width: 45px;
+  margin-bottom: -3px;
+}
+.vert_header {
+  margin-bottom: 5px;
+}
+
+.vert_text {
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+#first_vert {
+  margin-top: 100px;
+}
+#aline {
+  margin-left: 140px;
+}
+
+.vert_size {
+  height: 125px;
+  width: 800px;
+}
+
+iframe {
+  margin: auto;
+}
+
+#iframe_marg {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header_of_box {
+  height: 60px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* component style */
+
+body {
+  background-color: #eee;
+}
+header {
+  background-color: #eee;
+}
+
+input[type="submit"],
+button {
+  color: black;
+  background-color: #f1c40f;
+}
+
+.box {
+  margin: 20px;
+  height: 300px;
+  width: 313px;
+  border: 2px solid black;
+  text-align: center;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+}
+
+.header_of_box {
+  font-family: "Roboto", sans-serif;
+  background-color: #ddd;
+  font-weight: 700;
+}
+
+/* typography */
+
+.header_text {
+  font-size: 20px;
+}
+
+.inside_text {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+#headline_of_page {
+  font-size: 35px;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="submit"],
+button {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.vert_header {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+.vert_size {
+  font-size: 22px;
 }
